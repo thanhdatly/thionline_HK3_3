@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@include file="/common/taglib.jsp"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lớp học</title>
+</head>
+<body>
+	<div class="container">
+		<form action="">
+			<input type="hidden" value="" id="classId" name="classId">
+			<c:forEach var="item" items="${model.listResult}">
+				<a href="<c:url value='/test?id=${item.id}'/>">${item.name}</a>
+				<br>
+				<br>
+			</c:forEach>
+		</form>
+		
+	</div>
+</body>
+</html>

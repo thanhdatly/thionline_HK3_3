@@ -1,0 +1,14 @@
+package com.javaweb.model;
+
+import java.sql.Time;
+
+public class TestModel extends AbstractModel<TestModel>{
+	private String name;
+	private Long classId;
+	private Time testTime;
+	
+	
+	
+	
+
+}

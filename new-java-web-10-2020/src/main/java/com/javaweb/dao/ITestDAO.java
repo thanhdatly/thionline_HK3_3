@@ -1,0 +1,10 @@
+package com.javaweb.dao;
+
+import java.util.List;
+
+import com.javaweb.model.TestModel;
+
+public interface ITestDAO extends GenericDAO<TestModel>{
+	List<TestModel> findAll(Long classId);
+	
+}

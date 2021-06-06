@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+J:\Zava\PJ1\workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3106150789.index
+1999338969.index
+3784435997.index
+2356605654.index
+2993588852.index
+1286187248.index

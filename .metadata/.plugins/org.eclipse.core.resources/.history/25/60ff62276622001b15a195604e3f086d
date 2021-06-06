@@ -1,0 +1,17 @@
+package com.javaweb.dao.impl;
+
+import java.util.List;
+
+import com.javaweb.dao.ITestDAO;
+import com.javaweb.model.TestModel;
+
+public class TestDAO extends AbstractDAO<TestModel> implements ITestDAO {
+
+	@Override
+	public List<TestModel> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

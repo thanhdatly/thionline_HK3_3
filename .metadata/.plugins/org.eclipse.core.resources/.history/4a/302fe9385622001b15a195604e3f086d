@@ -1,0 +1,52 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/templates/heroic-features)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+header{
+	background-image:url(../img/mensen-verzorgen-succes-gezondheid-leven-logo-sjabloon-pictogrammen_6415-256.jpg);
+	background-position:right;
+	background-repeat:no-repeat;
+	border: 1px solid #CCC;
+	
+}
+.menu ul{
+	background-color:#00b1be;
+	list-style-type:none;
+	text-align:center;
+}
+.menu li{
+	color:#CCC;
+	display:inline-block;
+	width:150px;
+	height:40px;
+	line-height:40px;
+	margin-left:-5px;	
+	position:relative;
+}
+
+.menu a{
+	text-decoration:none;
+	color:#FFF;
+	display:block;	
+	font-weight:bolder;
+}
+.menu a:hover{
+	background:#f1f1f1;
+	color:#333;	
+}
+.sub-menu{
+	display:none;
+	position: absolute;	
+}
+.sub-menu li{
+	margin-left:-40px !important;
+}
+.menu li:hover .sub-menu {
+ 	display: block;
+}
+

@@ -1,0 +1,17 @@
+127.0.0.1 - - [03/Nov/2020:13:33:49 +0700] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:33:50 +0700] "GET /new-java-web-10-2020/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:15 +0700] "GET /new-java-web-10-2020/trang-chu HTTP/1.1" 200 5786
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:15 +0700] "GET /new-java-web-10-2020/template/web/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:15 +0700] "GET /new-java-web-10-2020/template/web/css/heroic-features.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:15 +0700] "GET /new-java-web-10-2020/template/web/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:15 +0700] "GET /new-java-web-10-2020/template/web/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:15 +0700] "GET /new-java-web-10-2020/template/web/img/anhvan.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:15 +0700] "GET /new-java-web-10-2020/template/web/img/dialy.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:15 +0700] "GET /new-java-web-10-2020/template/web/img/gdcd.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:15 +0700] "GET /new-java-web-10-2020/template/web/img/lichsu.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:15 +0700] "GET /new-java-web-10-2020/template/web/img/sinhhoc.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:15 +0700] "GET /new-java-web-10-2020/template/web/img/hoahoc.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:15 +0700] "GET /new-java-web-10-2020/template/web/img/vatly.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:15 +0700] "GET /new-java-web-10-2020/template/web/img/mensen-verzorgen-succes-gezondheid-leven-logo-sjabloon-pictogrammen_6415-256.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:15 +0700] "GET /new-java-web-10-2020/template/web/img/toan.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Nov/2020:13:36:16 +0700] "GET /favicon.ico HTTP/1.1" 404 1005

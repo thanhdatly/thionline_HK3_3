@@ -1,0 +1,16 @@
+package com.javaweb.dao.impl;
+
+import com.javaweb.dao.IUserDAO;
+import com.javaweb.model.UserModel;
+
+public class UserDAO extends AbstractDAO<UserModel> implements IUserDAO {
+
+	@Override
+	public UserModel findUserNameAndPasswordAndStatus(String userName, String password, Integer status) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+}

@@ -1,0 +1,16 @@
+package com.javaweb.dao;
+
+import java.util.List;
+
+import com.javaweb.model.ClassModel;
+import com.javaweb.paging.Pageble;
+
+public interface IClassDAO extends GenericDAO<ClassModel>{
+	List<ClassModel> findAll(Pageble page);
+	List<ClassModel> findBySubjectId(Long subjectId);
+	Long save(ClassModel classModel);
+	ClassModel findOne(Long id);
+	void update(ClassModel updateClass);
+	void delete(Long id);
+	int getTotalItem();
+}

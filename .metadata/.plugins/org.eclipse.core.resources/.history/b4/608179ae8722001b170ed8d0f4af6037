@@ -1,0 +1,12 @@
+package com.javaweb.dao;
+
+import java.util.List;
+
+import com.javaweb.model.ClassModel;
+import com.javaweb.paging.Pageble;
+
+public interface IQuestionDAO extends GenericDAO<QuestionModel>{
+	List<Question> findAll(Pageble pageble);
+	
+	ClassModel findOne(Long id);
+}

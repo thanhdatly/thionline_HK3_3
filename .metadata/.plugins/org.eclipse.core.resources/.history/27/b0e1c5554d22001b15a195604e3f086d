@@ -1,0 +1,48 @@
+package com.javaweb.controller.web;
+
+import java.io.IOException;
+
+import javax.inject.Inject;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.javaweb.constant.SystemConstant;
+import com.javaweb.model.ClassModel;
+import com.javaweb.service.IClassService;
+
+@WebServlet(urlPatterns = { "/class" })
+public class ClassController extends HttpServlet {
+
+	@Inject
+	private IClassService classService;
+	private static final long serialVersionUID = -374774350676466657L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ClassModel model = new ClassModel();
+		String pageStr = request.getParameter("page");
+		String maxPageItemStr = request.getParameter("maxPageItem");
+		if(pageStr != null) {
+			model.setPage(Integer.parseInt(pageStr));
+		} else {
+			model.setPage(1);
+		}
+		if(maxPageItemStr != null) {
+			model.setMaxPageItem(Integer.parseInt(maxPageItemStr));
+		}
+		Integer offset = (model.getPage()  -1) * model.getMaxPageItem();
+		model.setListResult(classService.findAll(offset, model.getMaxPageItem()));
+		model.setTotalItem(classService.getTotalItem());
+		model.setTotalPages((int)Math.ceil((double) model.getTotalItem() / model.getTotalPages()));
+		request.setAttribute(SystemConstant.MODEL, model); 
+		RequestDispatcher rd =request.getRequestDispatcher("/views/web/class/list.jsp");
+		rd.forward(request, response);
+	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse reponse) throws ServletException, IOException {
+
+	}
+}

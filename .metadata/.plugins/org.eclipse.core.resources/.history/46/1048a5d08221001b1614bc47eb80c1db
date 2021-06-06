@@ -1,0 +1,33 @@
+package com.javaweb.mapper;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.javaweb.model.ClassModel;
+
+public class ClassMapper implements RowMapper<ClassModel> {
+
+	@Override
+	public ClassModel mapRow(ResultSet rs) {
+		try {
+			ClassModel classs = new ClassModel();
+			classs.setId(rs.getLong("id"));
+			classs.setName(rs.getString("name"));
+			classs.setCode(rs.getString("code"));
+			classs.setStatus(rs.getInt("status"));
+			classs.setTeacherId(rs.getLong("teacherid"));
+			classs.setSubjectId(rs.getLong("subjectid"));
+			classs.setLevel(rs.getInt("level"));
+			classs.setCreateDate(rs.getTimestamp("createdate"));
+			if(rs.getTimestamp("modifieddate")!=null)
+			{
+				
+			}
+			return classs;
+		} catch (SQLException e) {
+			return null;
+		}
+
+	}
+
+}

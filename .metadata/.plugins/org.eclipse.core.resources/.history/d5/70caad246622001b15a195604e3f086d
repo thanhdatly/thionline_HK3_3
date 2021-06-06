@@ -1,0 +1,9 @@
+package com.javaweb.dao.impl;
+
+import com.javaweb.dao.ITestDAO;
+import com.javaweb.model.TestModel;
+
+public class TestDAO extends AbstractDAO<TestModel> implements ITestDAO {
+
+	TestModel
+}

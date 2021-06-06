@@ -1,0 +1,11 @@
+package com.javaweb.model;
+
+public class TestModel extends AbstractModel<TestModel>{
+	private String name;
+	private Long classId;
+	private
+	
+	
+	
+
+}

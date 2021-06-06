@@ -1,0 +1,5 @@
+package com.javaweb.paging;
+
+public class PageRequest implements Pageble{
+
+}

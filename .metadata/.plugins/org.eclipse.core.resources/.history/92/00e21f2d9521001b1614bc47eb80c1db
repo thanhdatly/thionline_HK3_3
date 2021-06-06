@@ -1,0 +1,63 @@
+package com.javaweb.dao.impl;
+
+import java.util.List;
+
+import com.javaweb.dao.IClassDAO;
+import com.javaweb.mapper.ClassMapper;
+import com.javaweb.model.ClassModel;
+
+public class ClassDAO extends AbstractDAO<ClassModel> implements IClassDAO {
+
+	@Override
+	public List<ClassModel> findAll() {
+		String sql = "SELECT * FROM class";
+		return query(sql, new ClassMapper());
+	}
+
+	@Override
+	public List<ClassModel> findBySubjectId(Long subjectId) {
+		String sql = "SELECT * FROM class WHERE subjectid = ?";
+		return query(sql, new ClassMapper(), subjectId);
+	}
+
+	@Override
+	public Long save(ClassModel classModel) {
+		StringBuilder sql = new StringBuilder("INSERT INTO class(name,code,teacherid,"); 
+		sql.append("subjectid,level)") ;
+		sql.append(" VALUES(?, ?, ?, ?, ?)");
+		// String sql = "call insert_class(?,?,?,?,?)";
+		return insert(sql.toString(), classModel.getName(), classModel.getCode(),
+				classModel.getTeacherId(), classModel.getSubjectId(), classModel.getLevel());
+	}
+
+	@Override
+	public ClassModel findOne(Long id) {
+		String sql = "SELECT * FROM class WHERE id = ?";
+		List<ClassModel> classs = query(sql, new ClassMapper(), id);
+		return classs.isEmpty() ? null : classs.get(0);
+	}
+
+	@Override
+	public void update(ClassModel updateClass) {
+		StringBuilder sql = new StringBuilder("UPDATE class SET name = ?,teacherid = ?,");
+		sql.append(" subjectid = ?, level = ? , createdate = ? , modifieddate = ? WHERE id = ?");
+		update(sql.toString(), updateClass.getName(), updateClass.getTeacherId(),
+				updateClass.getSubjectId(),updateClass.getLevel(), 
+				updateClass.getCreateDate(),updateClass.getModifiedDate(), updateClass.getId());
+	}
+
+	@Override
+	public void delete(Long id) {
+		String sql = "DELETE FROM class WHERE id = ?";
+		update(sql, id);
+	}
+
+	@Override
+	public List<ClassModel> findAllInfo() {
+		StringBuilder sql = new StringBuilder("select c.id,c.name class,c.code,c.status,")	;
+		sql.append("t.name teacher,s.name subject,c.level,c.createdate,c.modifieddate");
+		sql.append(" from class c join teacher t on c.teacherid = t.id");
+		return query(sql, new ClassMapper());
+	}
+
+}

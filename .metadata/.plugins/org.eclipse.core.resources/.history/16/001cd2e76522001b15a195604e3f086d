@@ -1,0 +1,26 @@
+package com.javaweb.model;
+
+import java.sql.Time;
+import java.sql.Timestamp;
+
+public class Test_QuestionModel extends AbstractModel<Test_QuestionModel> {
+	private Long testId;
+	private Long questionId;
+
+	public Long getTestId() {
+		return testId;
+	}
+
+	public void setTestId(Long testId) {
+		this.testId = testId;
+	}
+
+	public Long getQuestionId() {
+		return questionId;
+	}
+
+	public void setQuestionId(Long questionId) {
+		this.questionId = questionId;
+	}
+
+}

@@ -1,0 +1,34 @@
+package com.javaweb.mapper;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.javaweb.model.QuestionModel;
+
+public class QuestionMapper implements RowMapper<QuestionModel> {
+
+	@Override
+	public QuestionModel mapRow(ResultSet rs) {
+		try {
+			QuestionModel question = new QuestionModel();
+			classs.setId(rs.getLong("id"));
+			classs.setContent(rs.getString("content"));
+			classs.setA(rs.getString("a"));
+			classs.setB(rs.getString("b"));
+			classs.setC(rs.getString("c"));
+			classs.setD(rs.getString("d"));
+			classs.setCorrect(rs.getString("correct"));
+			classs.setSubjectId(rs.getLong("subjectid"));
+			classs.setLevel(rs.getInt("level"));
+			classs.setCreateDate(rs.getTimestamp("createdate"));
+			if (rs.getTimestamp("modifieddate") != null) {
+				classs.setModifiedDate(rs.getTimestamp("modifieddate"));
+			}
+			return classs;
+		} catch (SQLException e) {
+			return null;
+		}
+
+	}
+
+}

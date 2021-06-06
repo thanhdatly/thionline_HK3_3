@@ -1,0 +1,17 @@
+package com.javaweb.dao.impl;
+
+import com.javaweb.dao.IUserDAO;
+import com.javaweb.mapper.ClassMapper;
+import com.javaweb.model.UserModel;
+
+public class UserDAO extends AbstractDAO<UserModel> implements IUserDAO {
+
+	@Override
+	public UserModel findUserNameAndPasswordAndStatus(String userName, String password, Integer status) {
+		String sql = "SELECT * FROM class WHERE subjectid = ?";
+		return query(sql, new ClassMapper(), subjectId);
+	}
+
+
+
+}

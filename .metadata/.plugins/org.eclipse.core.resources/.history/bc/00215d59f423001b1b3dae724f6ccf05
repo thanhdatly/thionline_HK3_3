@@ -1,0 +1,25 @@
+package com.javaweb.dao.impl;
+
+import java.util.List;
+
+import com.javaweb.dao.IUserDAO;
+import com.javaweb.mapper.ClassMapper;
+import com.javaweb.mapper.UserMapper;
+import com.javaweb.model.ClassModel;
+import com.javaweb.model.UserModel;
+
+public class UserDAO extends AbstractDAO<UserModel> implements IUserDAO {
+
+	@Override
+	public UserModel findUserNameAndPasswordAndStatus(String userName, String password, Integer status) {
+		StringBuilder sql = ;
+		/*
+		 * List<UserModel> classs = query(sql, new UserMapper(),
+		 * userName,password,status); return classs.isEmpty() ? null : classs.get(0);
+		 */
+		return null;
+	}
+
+
+
+}

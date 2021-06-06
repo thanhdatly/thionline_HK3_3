@@ -1,0 +1,32 @@
+package com.javaweb.mapper;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.javaweb.model.ClassModel;
+import com.javaweb.model.TestModel;
+
+public class TestMapper implements RowMapper<TestModel> {
+
+	@Override
+	public TestModel mapRow(ResultSet rs) {
+		try {
+			TestModel classs = new TestModel();
+			classs.setId(rs.getLong("id"));
+			classs.setName(rs.getString("name"));
+			classs.setClassId(rs.getLong("classid"));
+
+
+			classs.setModifiedDate(rs.getTimestamp("modifieddate"));
+			classs.setCreateDate(rs.getTimestamp("createdate"));
+			if (rs.getTimestamp("modifieddate") != null) {
+				classs.setModifiedDate(rs.getTimestamp("modifieddate"));
+			}
+			return classs;
+		} catch (SQLException e) {
+			return null;
+		}
+
+	}
+
+}

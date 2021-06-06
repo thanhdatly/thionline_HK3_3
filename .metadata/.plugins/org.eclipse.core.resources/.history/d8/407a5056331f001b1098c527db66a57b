@@ -1,0 +1,5 @@
+package com.javaweb.controller.web.api;
+
+public class ClassAPI {
+
+}

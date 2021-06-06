@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.templates.TemplatePreferencePage$EditTemplateDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="56"/>
+		<item key="DIALOG_Y_ORIGIN" value="176"/>
+		<item key="DIALOG_WIDTH" value="801"/>
+		<item key="DIALOG_HEIGHT" value="419"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="first"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="first"/>
+			<item value="fir"/>
+			<item value="user"/>
+			<item value="laptrinhjavaweb"/>
+			<item value="nav-link"/>
+			<item value="nav-link dropdown-toggle"/>
+			<item value="a"/>
+			<item value="#right"/>
+			<item value="right"/>
+			<item value="back-to-top"/>
+			<item value="btn btn-light btn-lg back-to-top"/>
+			<item value="svg-inline--fa fa-chart-area fa-w-16 mr-1"/>
+		</list>
+		<list key="replacehistory">
+			<item value="class"/>
+			<item value="javaweb"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1341"/>
+		<item key="DIALOG_Y_ORIGIN" value="230"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

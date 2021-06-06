@@ -1,0 +1,25 @@
+package com.javaweb.mapper;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.javaweb.model.ClassModel;
+import com.javaweb.model.Test_QuestionModel;
+
+public class Test_QuestionMapper implements RowMapper<Test_QuestionModel> {
+
+	@Override
+	public Test_QuestionModel mapRow(ResultSet rs) {
+		try {
+			Test_QuestionModel classs = new Test_QuestionModel();
+			classs.setId(rs.getLong("id"));
+			classs.setTeacherId(rs.getLong("teacherid"));
+			classs.setSubjectId(rs.getLong("subjectid"));
+			return classs;
+		} catch (SQLException e) {
+			return null;
+		}
+
+	}
+
+}

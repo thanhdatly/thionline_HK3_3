@@ -1,0 +1,26 @@
+package com.javaweb.dao.impl;
+
+import java.util.List;
+
+import com.javaweb.dao.IQuestionDAO;
+import com.javaweb.dao.ITestDAO;
+import com.javaweb.mapper.TestMapper;
+import com.javaweb.model.QuestionModel;
+import com.javaweb.model.TestModel;
+
+public class QuestionDAO extends AbstractDAO<QuestionModel> implements IQuestionDAO {
+
+	@Override
+	public List<QuestionModel> findAll(Long classId) {
+		String sql = "SELECT * FROM test WHERE classid = ?";
+		return query(sql, new TestMapper(), classId);
+	}
+
+	@Override
+	public QuestionModel findOne(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

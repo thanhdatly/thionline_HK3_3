@@ -1,0 +1,12 @@
+package com.javaweb.service;
+
+import java.util.List;
+
+import com.javaweb.model.ClassModel;
+import com.javaweb.model.TestModel;
+import com.javaweb.paging.Pageble;
+
+public interface ITestService {
+	List<TestModel> findAll(Long classId);
+	
+}

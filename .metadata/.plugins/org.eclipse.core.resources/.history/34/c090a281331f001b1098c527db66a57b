@@ -1,0 +1,8 @@
+package com.javaweb.controller.web.api;
+
+import javax.servlet.http.HttpServlet;
+
+public class ClassAPI extends HttpServlet{
+	private static final long serialVersionUID = -8512912920356057537L;
+
+}

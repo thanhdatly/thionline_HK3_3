@@ -1,0 +1,7 @@
+package com.javaweb.controller.web.api;
+
+import javax.servlet.http.HttpServlet;
+
+public class ClassAPI extends HttpServlet{
+
+}

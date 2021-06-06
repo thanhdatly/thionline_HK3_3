@@ -1,0 +1,30 @@
+package com.javaweb.service.impl;
+
+import java.util.List;
+
+import javax.inject.Inject;
+
+import com.javaweb.dao.ITestDAO;
+import com.javaweb.dao.ITest_QuestionDAO;
+import com.javaweb.model.TestModel;
+import com.javaweb.model.Test_QuestionModel;
+import com.javaweb.service.ITestService;
+import com.javaweb.service.ITest_QuestionService;
+
+public class Test_QuestionService implements ITest_QuestionService{
+
+	
+	@Inject
+	private ITest_QuestionDAO test_QuestionDAO;
+
+	@Override
+	public List<Test_QuestionModel> findAll(Long testId) {
+		return test_QuestionDAO.findAll(testId);
+	}
+
+	
+	
+	
+
+
+}

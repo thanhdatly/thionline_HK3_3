@@ -1,0 +1,10 @@
+package com.javaweb.dao.impl;
+
+import com.javaweb.dao.IUserDAO;
+import com.javaweb.model.UserModel;
+
+public class UserDAO extends AbstractDAO<UserModel> implements IUserDAO {
+
+
+
+}

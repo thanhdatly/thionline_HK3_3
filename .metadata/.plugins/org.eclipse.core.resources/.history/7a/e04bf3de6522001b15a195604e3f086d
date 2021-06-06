@@ -1,0 +1,11 @@
+package com.javaweb.model;
+
+import java.sql.Time;
+import java.sql.Timestamp;
+
+public class Test_QuestionModel extends AbstractModel<Test_QuestionModel> {
+	private Long testId;
+	private Long classId;
+	
+
+}

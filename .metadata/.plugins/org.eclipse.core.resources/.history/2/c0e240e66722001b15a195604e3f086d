@@ -1,0 +1,24 @@
+package com.javaweb.service.impl;
+
+import java.sql.Timestamp;
+import java.util.List;
+
+import javax.inject.Inject;
+
+import com.javaweb.dao.IClassDAO;
+import com.javaweb.model.ClassModel;
+import com.javaweb.paging.Pageble;
+import com.javaweb.service.IClassService;
+
+public class TestService implements ITestService{
+
+	
+	@Inject
+	private IClassDAO classDAO;
+
+	
+	
+	
+
+
+}
